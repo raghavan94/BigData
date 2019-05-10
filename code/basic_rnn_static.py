@@ -12,8 +12,11 @@ from scipy import io as sio
 import tensorflow as tf
 import dataset_path
 import parameters
+import os
 
 tf.reset_default_graph()
+
+g = tf.Graph()
 
 print('backend', K.backend())
 
@@ -140,7 +143,7 @@ if __name__ == '__main__':
     
     # Initialize the variables (i.e. assign their default value)
     init = tf.global_variables_initializer()
-    epochs = 2
+    epochs = 5
     
     with tf.Session() as sess:
 
@@ -175,6 +178,10 @@ if __name__ == '__main__':
             print("Optimization Finished!")
             
             epochs = epochs - 1
-    
+    		
+	    tf.summary.FileWriter('/users/madanraj/tf/log/', sess.graph)
+
         print("Testing Accuracy:", \
             sess.run(accuracy, feed_dict={X: X_test, Y: Y_test}))
+
+	#tf.summary.FileWriter("%s/exampleTensorboard" % (os.environ.get("TF_LOG_DIR")), sess.graph)

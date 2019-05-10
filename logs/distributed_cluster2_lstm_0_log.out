@@ -1,0 +1,281 @@
+nohup: ignoring input
+Using TensorFlow backend.
+2019-05-09 23:35:24.432849: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2019-05-09 23:35:24.449995: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2194835000 Hz
+2019-05-09 23:35:24.451397: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3673550 executing computations on platform Host. Devices:
+2019-05-09 23:35:24.451417: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-05-09 23:35:24.452220: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:252] Initialize GrpcChannelCache for job ps -> {0 -> node0:2262}
+2019-05-09 23:35:24.452233: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:252] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2263, 1 -> node1:2264, 2 -> node2:2265}
+2019-05-09 23:35:24.454234: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:391] Started server with target: grpc://localhost:2263
+WARNING:tensorflow:From /usr/local/lib/python2.7/dist-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /users/madanraj/BigData-master/code/distributed_lstm_rnn_dynamic_clusterspec.py:131: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From /users/madanraj/BigData-master/code/distributed_lstm_rnn_dynamic_clusterspec.py:137: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.batch_normalization instead.
+WARNING:tensorflow:From /users/madanraj/BigData-master/code/distributed_lstm_rnn_dynamic_clusterspec.py:212: __init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+2019-05-09 23:35:28.371604: I tensorflow/core/distributed_runtime/master_session.cc:1192] Start master session 85506b7766df9f82 with config: 
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Starting standard services.
+WARNING:tensorflow:Standard services need a 'logdir' passed to the SessionManager
+INFO:tensorflow:Starting queue runners.
+worker
+
+WARNING: The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+If you depend on functionality not listed there, please file an issue.
+
+dense/kernel:0
+dense/bias:0
+Variables initialized ...
+running epochs
+Step 10, Minibatch Loss= 2.3057, Training Accuracy= 0.060
+Step 20, Minibatch Loss= 2.3000, Training Accuracy= 0.070
+Step 30, Minibatch Loss= 2.2719, Training Accuracy= 0.210
+Step 40, Minibatch Loss= 2.1451, Training Accuracy= 0.180
+Step 50, Minibatch Loss= 1.9052, Training Accuracy= 0.310
+Step 60, Minibatch Loss= 1.5327, Training Accuracy= 0.490
+Step 70, Minibatch Loss= 1.1814, Training Accuracy= 0.620
+Step 80, Minibatch Loss= 0.9552, Training Accuracy= 0.670
+Step 90, Minibatch Loss= 0.8552, Training Accuracy= 0.740
+Step 100, Minibatch Loss= 0.8938, Training Accuracy= 0.690
+Step 110, Minibatch Loss= 0.7435, Training Accuracy= 0.770
+Step 120, Minibatch Loss= 0.8388, Training Accuracy= 0.760
+Step 130, Minibatch Loss= 0.6690, Training Accuracy= 0.860
+Step 140, Minibatch Loss= 0.5489, Training Accuracy= 0.830
+Step 150, Minibatch Loss= 0.5849, Training Accuracy= 0.790
+Step 160, Minibatch Loss= 0.4116, Training Accuracy= 0.880
+Step 170, Minibatch Loss= 0.3445, Training Accuracy= 0.910
+Step 180, Minibatch Loss= 0.3187, Training Accuracy= 0.910
+Step 190, Minibatch Loss= 0.5400, Training Accuracy= 0.810
+Step 200, Minibatch Loss= 0.3267, Training Accuracy= 0.880
+Step 210, Minibatch Loss= 0.2486, Training Accuracy= 0.940
+Step 220, Minibatch Loss= 0.2806, Training Accuracy= 0.920
+Step 230, Minibatch Loss= 0.2364, Training Accuracy= 0.930
+Step 240, Minibatch Loss= 0.3261, Training Accuracy= 0.900
+Step 250, Minibatch Loss= 0.2476, Training Accuracy= 0.920
+Step 260, Minibatch Loss= 0.2097, Training Accuracy= 0.920
+Step 270, Minibatch Loss= 0.2619, Training Accuracy= 0.930
+Step 280, Minibatch Loss= 0.2478, Training Accuracy= 0.930
+Step 290, Minibatch Loss= 0.1390, Training Accuracy= 0.970
+Step 300, Minibatch Loss= 0.2249, Training Accuracy= 0.920
+Step 310, Minibatch Loss= 0.2236, Training Accuracy= 0.930
+Step 320, Minibatch Loss= 0.1109, Training Accuracy= 0.980
+Step 330, Minibatch Loss= 0.1442, Training Accuracy= 0.950
+Step 340, Minibatch Loss= 0.1268, Training Accuracy= 0.970
+Step 350, Minibatch Loss= 0.2370, Training Accuracy= 0.900
+Step 360, Minibatch Loss= 0.0669, Training Accuracy= 0.980
+Step 370, Minibatch Loss= 0.1131, Training Accuracy= 0.970
+Step 380, Minibatch Loss= 0.0948, Training Accuracy= 0.960
+Step 390, Minibatch Loss= 0.1856, Training Accuracy= 0.930
+Step 400, Minibatch Loss= 0.1551, Training Accuracy= 0.960
+Step 410, Minibatch Loss= 0.0485, Training Accuracy= 0.990
+Step 420, Minibatch Loss= 0.1450, Training Accuracy= 0.950
+Step 430, Minibatch Loss= 0.0517, Training Accuracy= 1.000
+Step 440, Minibatch Loss= 0.1391, Training Accuracy= 0.930
+Step 450, Minibatch Loss= 0.0805, Training Accuracy= 0.990
+Step 460, Minibatch Loss= 0.0468, Training Accuracy= 0.980
+Optimization Finished!
+running epochs
+Step 10, Minibatch Loss= 0.0659, Training Accuracy= 0.980
+Step 20, Minibatch Loss= 0.0170, Training Accuracy= 1.000
+Step 30, Minibatch Loss= 0.1194, Training Accuracy= 0.970
+Step 40, Minibatch Loss= 0.0204, Training Accuracy= 1.000
+Step 50, Minibatch Loss= 0.0458, Training Accuracy= 1.000
+Step 60, Minibatch Loss= 0.1144, Training Accuracy= 0.950
+Step 70, Minibatch Loss= 0.0253, Training Accuracy= 0.990
+Step 80, Minibatch Loss= 0.0382, Training Accuracy= 0.990
+Step 90, Minibatch Loss= 0.0262, Training Accuracy= 0.990
+Step 100, Minibatch Loss= 0.0326, Training Accuracy= 0.990
+Step 110, Minibatch Loss= 0.0624, Training Accuracy= 0.990
+Step 120, Minibatch Loss= 0.0609, Training Accuracy= 0.990
+Step 130, Minibatch Loss= 0.0336, Training Accuracy= 0.990
+Step 140, Minibatch Loss= 0.0826, Training Accuracy= 0.970
+Step 150, Minibatch Loss= 0.0595, Training Accuracy= 0.980
+Step 160, Minibatch Loss= 0.0246, Training Accuracy= 1.000
+Step 170, Minibatch Loss= 0.0183, Training Accuracy= 1.000
+Step 180, Minibatch Loss= 0.0659, Training Accuracy= 0.990
+Step 190, Minibatch Loss= 0.0139, Training Accuracy= 1.000
+Step 200, Minibatch Loss= 0.0135, Training Accuracy= 1.000
+Step 210, Minibatch Loss= 0.0072, Training Accuracy= 1.000
+Step 220, Minibatch Loss= 0.0181, Training Accuracy= 1.000
+Step 230, Minibatch Loss= 0.0390, Training Accuracy= 0.980
+Step 240, Minibatch Loss= 0.0114, Training Accuracy= 1.000
+Step 250, Minibatch Loss= 0.0845, Training Accuracy= 0.960
+Step 260, Minibatch Loss= 0.0131, Training Accuracy= 1.000
+Step 270, Minibatch Loss= 0.1347, Training Accuracy= 0.940
+Step 280, Minibatch Loss= 0.0149, Training Accuracy= 1.000
+Step 290, Minibatch Loss= 0.0066, Training Accuracy= 1.000
+Step 300, Minibatch Loss= 0.0214, Training Accuracy= 1.000
+Step 310, Minibatch Loss= 0.0299, Training Accuracy= 0.990
+Step 320, Minibatch Loss= 0.0322, Training Accuracy= 1.000
+Step 330, Minibatch Loss= 0.0176, Training Accuracy= 1.000
+Step 340, Minibatch Loss= 0.0108, Training Accuracy= 1.000
+Step 350, Minibatch Loss= 0.0163, Training Accuracy= 1.000
+Step 360, Minibatch Loss= 0.0319, Training Accuracy= 0.990
+Step 370, Minibatch Loss= 0.0358, Training Accuracy= 0.990
+Step 380, Minibatch Loss= 0.0453, Training Accuracy= 0.990
+Step 390, Minibatch Loss= 0.0226, Training Accuracy= 1.000
+Step 400, Minibatch Loss= 0.0633, Training Accuracy= 0.960
+Step 410, Minibatch Loss= 0.0053, Training Accuracy= 1.000
+Step 420, Minibatch Loss= 0.0172, Training Accuracy= 1.000
+Step 430, Minibatch Loss= 0.0067, Training Accuracy= 1.000
+Step 440, Minibatch Loss= 0.0112, Training Accuracy= 1.000
+Step 450, Minibatch Loss= 0.0243, Training Accuracy= 0.990
+Step 460, Minibatch Loss= 0.0143, Training Accuracy= 1.000
+Optimization Finished!
+running epochs
+Step 10, Minibatch Loss= 0.0117, Training Accuracy= 1.000
+Step 20, Minibatch Loss= 0.0047, Training Accuracy= 1.000
+Step 30, Minibatch Loss= 0.0982, Training Accuracy= 0.980
+Step 40, Minibatch Loss= 0.0039, Training Accuracy= 1.000
+Step 50, Minibatch Loss= 0.0069, Training Accuracy= 1.000
+Step 60, Minibatch Loss= 0.0052, Training Accuracy= 1.000
+Step 70, Minibatch Loss= 0.0028, Training Accuracy= 1.000
+Step 80, Minibatch Loss= 0.0039, Training Accuracy= 1.000
+Step 90, Minibatch Loss= 0.0093, Training Accuracy= 1.000
+Step 100, Minibatch Loss= 0.0064, Training Accuracy= 1.000
+Step 110, Minibatch Loss= 0.0079, Training Accuracy= 1.000
+Step 120, Minibatch Loss= 0.0446, Training Accuracy= 0.990
+Step 130, Minibatch Loss= 0.0228, Training Accuracy= 0.990
+Step 140, Minibatch Loss= 0.0442, Training Accuracy= 0.980
+Step 150, Minibatch Loss= 0.0236, Training Accuracy= 0.990
+Step 160, Minibatch Loss= 0.0077, Training Accuracy= 1.000
+Step 170, Minibatch Loss= 0.0340, Training Accuracy= 0.990
+Step 180, Minibatch Loss= 0.0255, Training Accuracy= 0.990
+Step 190, Minibatch Loss= 0.0123, Training Accuracy= 1.000
+Step 200, Minibatch Loss= 0.0095, Training Accuracy= 1.000
+Step 210, Minibatch Loss= 0.0056, Training Accuracy= 1.000
+Step 220, Minibatch Loss= 0.0040, Training Accuracy= 1.000
+Step 230, Minibatch Loss= 0.0128, Training Accuracy= 1.000
+Step 240, Minibatch Loss= 0.0045, Training Accuracy= 1.000
+Step 250, Minibatch Loss= 0.0169, Training Accuracy= 0.990
+Step 260, Minibatch Loss= 0.0080, Training Accuracy= 1.000
+Step 270, Minibatch Loss= 0.0410, Training Accuracy= 0.990
+Step 280, Minibatch Loss= 0.0103, Training Accuracy= 1.000
+Step 290, Minibatch Loss= 0.0024, Training Accuracy= 1.000
+Step 300, Minibatch Loss= 0.0429, Training Accuracy= 0.990
+Step 310, Minibatch Loss= 0.0614, Training Accuracy= 0.990
+Step 320, Minibatch Loss= 0.0066, Training Accuracy= 1.000
+Step 330, Minibatch Loss= 0.0050, Training Accuracy= 1.000
+Step 340, Minibatch Loss= 0.0071, Training Accuracy= 1.000
+Step 350, Minibatch Loss= 0.0057, Training Accuracy= 1.000
+Step 360, Minibatch Loss= 0.0141, Training Accuracy= 0.990
+Step 370, Minibatch Loss= 0.0067, Training Accuracy= 1.000
+Step 380, Minibatch Loss= 0.0307, Training Accuracy= 0.990
+Step 390, Minibatch Loss= 0.0120, Training Accuracy= 1.000
+Step 400, Minibatch Loss= 0.0167, Training Accuracy= 0.990
+Step 410, Minibatch Loss= 0.0026, Training Accuracy= 1.000
+Step 420, Minibatch Loss= 0.0715, Training Accuracy= 0.980
+Step 430, Minibatch Loss= 0.0049, Training Accuracy= 1.000
+Step 440, Minibatch Loss= 0.0342, Training Accuracy= 0.990
+Step 450, Minibatch Loss= 0.0180, Training Accuracy= 1.000
+Step 460, Minibatch Loss= 0.0331, Training Accuracy= 0.990
+Optimization Finished!
+running epochs
+Step 10, Minibatch Loss= 0.0059, Training Accuracy= 1.000
+Step 20, Minibatch Loss= 0.0040, Training Accuracy= 1.000
+Step 30, Minibatch Loss= 0.0121, Training Accuracy= 1.000
+Step 40, Minibatch Loss= 0.0049, Training Accuracy= 1.000
+Step 50, Minibatch Loss= 0.0098, Training Accuracy= 1.000
+Step 60, Minibatch Loss= 0.0186, Training Accuracy= 1.000
+Step 70, Minibatch Loss= 0.0036, Training Accuracy= 1.000
+Step 80, Minibatch Loss= 0.0038, Training Accuracy= 1.000
+Step 90, Minibatch Loss= 0.0405, Training Accuracy= 0.990
+Step 100, Minibatch Loss= 0.0051, Training Accuracy= 1.000
+Step 110, Minibatch Loss= 0.0090, Training Accuracy= 1.000
+Step 120, Minibatch Loss= 0.0913, Training Accuracy= 0.960
+Step 130, Minibatch Loss= 0.0101, Training Accuracy= 1.000
+Step 140, Minibatch Loss= 0.0250, Training Accuracy= 0.990
+Step 150, Minibatch Loss= 0.0076, Training Accuracy= 1.000
+Step 160, Minibatch Loss= 0.0069, Training Accuracy= 1.000
+Step 170, Minibatch Loss= 0.0109, Training Accuracy= 1.000
+Step 180, Minibatch Loss= 0.0167, Training Accuracy= 1.000
+Step 190, Minibatch Loss= 0.0118, Training Accuracy= 1.000
+Step 200, Minibatch Loss= 0.0051, Training Accuracy= 1.000
+Step 210, Minibatch Loss= 0.0028, Training Accuracy= 1.000
+Step 220, Minibatch Loss= 0.0084, Training Accuracy= 1.000
+Step 230, Minibatch Loss= 0.0235, Training Accuracy= 0.990
+Step 240, Minibatch Loss= 0.0053, Training Accuracy= 1.000
+Step 250, Minibatch Loss= 0.0339, Training Accuracy= 1.000
+Step 260, Minibatch Loss= 0.0051, Training Accuracy= 1.000
+Step 270, Minibatch Loss= 0.0541, Training Accuracy= 0.980
+Step 280, Minibatch Loss= 0.0042, Training Accuracy= 1.000
+Step 290, Minibatch Loss= 0.0040, Training Accuracy= 1.000
+Step 300, Minibatch Loss= 0.0053, Training Accuracy= 1.000
+Step 310, Minibatch Loss= 0.0569, Training Accuracy= 0.990
+Step 320, Minibatch Loss= 0.0079, Training Accuracy= 1.000
+Step 330, Minibatch Loss= 0.0050, Training Accuracy= 1.000
+Step 340, Minibatch Loss= 0.0038, Training Accuracy= 1.000
+Step 350, Minibatch Loss= 0.0064, Training Accuracy= 1.000
+Step 360, Minibatch Loss= 0.0132, Training Accuracy= 1.000
+Step 370, Minibatch Loss= 0.0806, Training Accuracy= 0.980
+Step 380, Minibatch Loss= 0.0195, Training Accuracy= 0.990
+Step 390, Minibatch Loss= 0.0057, Training Accuracy= 1.000
+Step 400, Minibatch Loss= 0.0053, Training Accuracy= 1.000
+Step 410, Minibatch Loss= 0.0018, Training Accuracy= 1.000
+Step 420, Minibatch Loss= 0.0393, Training Accuracy= 0.990
+Step 430, Minibatch Loss= 0.0018, Training Accuracy= 1.000
+Step 440, Minibatch Loss= 0.0021, Training Accuracy= 1.000
+Step 450, Minibatch Loss= 0.0026, Training Accuracy= 1.000
+Step 460, Minibatch Loss= 0.0027, Training Accuracy= 1.000
+Optimization Finished!
+running epochs
+Step 10, Minibatch Loss= 0.0017, Training Accuracy= 1.000
+Step 20, Minibatch Loss= 0.0010, Training Accuracy= 1.000
+Step 30, Minibatch Loss= 0.0022, Training Accuracy= 1.000
+Step 40, Minibatch Loss= 0.0040, Training Accuracy= 1.000
+Step 50, Minibatch Loss= 0.0014, Training Accuracy= 1.000
+Step 60, Minibatch Loss= 0.0049, Training Accuracy= 1.000
+Step 70, Minibatch Loss= 0.0013, Training Accuracy= 1.000
+Step 80, Minibatch Loss= 0.0009, Training Accuracy= 1.000
+Step 90, Minibatch Loss= 0.0011, Training Accuracy= 1.000
+Step 100, Minibatch Loss= 0.0021, Training Accuracy= 1.000
+Step 110, Minibatch Loss= 0.0031, Training Accuracy= 1.000
+Step 120, Minibatch Loss= 0.0534, Training Accuracy= 0.980
+Step 130, Minibatch Loss= 0.0026, Training Accuracy= 1.000
+Step 140, Minibatch Loss= 0.0013, Training Accuracy= 1.000
+Step 150, Minibatch Loss= 0.0012, Training Accuracy= 1.000
+Step 160, Minibatch Loss= 0.0015, Training Accura2019-05-09 23:38:14.291156: W tensorflow/core/distributed_runtime/master_session.cc:2029] Unavailable: OS Error
+cy= 1.000
+Step 170, Minibatch Loss= 0.0062, Training Accuracy= 1.000
+Step 180, Minibatch Loss= 0.0230, Training Accuracy= 0.990
+Step 190, Minibatch Loss= 0.0028, Training Accuracy= 1.000
+Step 200, Minibatch Loss= 0.0018, Training Accuracy= 1.000
+Step 210, Minibatch Loss= 0.0006, Training Accuracy= 1.000
+Step 220, Minibatch Loss= 0.0007, Training Accuracy= 1.000
+Step 230, Minibatch Loss= 0.0058, Training Accuracy= 1.000
+Step 240, Minibatch Loss= 0.0013, Training Accuracy= 1.000
+Step 250, Minibatch Loss= 0.0058, Training Accuracy= 1.000
+Step 260, Minibatch Loss= 0.0005, Training Accuracy= 1.000
+Step 270, Minibatch Loss= 0.0089, Training Accuracy= 1.000
+Step 280, Minibatch Loss= 0.0016, Training Accuracy= 1.000
+Step 290, Minibatch Loss= 0.0012, Training Accuracy= 1.000
+Step 300, Minibatch Loss= 0.0008, Training Accuracy= 1.000
+Step 310, Minibatch Loss= 0.0007, Training Accuracy= 1.000
+Step 320, Minibatch Loss= 0.0036, Training Accuracy= 1.000
+Step 330, Minibatch Loss= 0.0077, Training Accuracy= 1.000
+Step 340, Minibatch Loss= 0.0014, Training Accuracy= 1.000
+Step 350, Minibatch Loss= 0.0015, Training Accuracy= 1.000
+Step 360, Minibatch Loss= 0.0028, Training Accuracy= 1.000
+Step 370, Minibatch Loss= 0.0215, Training Accuracy= 0.990
+Step 380, Minibatch Loss= 0.0046, Training Accuracy= 1.000
+Step 390, Minibatch Loss= 0.0029, Training Accuracy= 1.000
+Step 400, Minibatch Loss= 0.0011, Training Accuracy= 1.000
+Step 410, Minibatch Loss= 0.0005, Training Accuracy= 1.000
+Step 420, Minibatch Loss= 0.0012, Training Accuracy= 1.000
+Step 430, Minibatch Loss= 0.0016, Training Accuracy= 1.000
+Step 440, Minibatch Loss= 0.0032, Training Accuracy= 1.000
+Step 450, Minibatch Loss= 0.0012, Training Accuracy= 1.000
+Step 460, Minibatch Loss= 0.0010, Training Accuracy= 1.000
+Optimization Finished!
+('Testing Accuracy:', 0.983475)
+done
